@@ -1,0 +1,48 @@
+//
+// Fixed dashboard layout
+//
+
+.sb-nav-fixed {
+    .sb-topnav {
+        @extend .fixed-top;
+        z-index: $zindex-topnav;
+    }
+
+    #layoutSidenav {
+        #layoutSidenav_nav {
+            @extend .fixed-top;
+            width: 245px !important;
+            height: 100vh;
+            z-index: $zindex-sidenav;
+
+            .sb-sidenav {
+                background: white;
+                padding: 100px 10px 30px 10px;
+
+                .sb-sidenav-menu {
+                    overflow-y: auto;
+                }
+
+                .nav-link {
+                    color: #434342 !important;
+                    font-size: 16px !important;
+                    font-family: "Inter", sans-serif;
+                    padding: 10px;
+                }
+
+                .nav-link-active {
+                    background: #06EAC9;
+                    padding: 10px;
+                    border-radius: 0 0 15px 0;
+                    font-weight: 700 !important;
+
+                }
+            }
+        }
+
+        #layoutSidenav_content {
+            padding-left: $sidenav-base-width;
+            top: $topnav-base-height;
+        }
+    }
+}

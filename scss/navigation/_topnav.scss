@@ -1,0 +1,111 @@
+//
+// Topnav
+//
+
+.sb-topnav {
+    padding-left: 0;
+    height: $topnav-base-height;
+    z-index: $zindex-topnav;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+
+
+    a.navbar-brand {
+        z-index: 10;
+        margin-right: 60px;
+
+        img {
+            max-width: 180px;
+        }
+    }
+
+    .navbar-brand {
+        width: $sidenav-base-width;
+        padding-left: $navbar-padding-x;
+        padding-right: $navbar-padding-x;
+        margin: 0;
+        width: auto;
+    }
+
+    &.navbar-dark {
+        #sidebarToggle {
+            color: $topnav-dark-toggler-color;
+        }
+    }
+
+    &.navbar-light {
+        #sidebarToggle {
+            color: $topnav-light-toggler-color;
+        }
+    }
+
+    .btn-primary {
+        background: #434342;
+        border-radius: 0 0 15px 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        width: 52px;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    .input-group {
+        min-width: 480px;
+        padding: 10px;
+        border-radius: 0 0 20px 0;
+        background-color: white;
+
+        input {
+            padding-left: 0;
+            padding-top: 0 ;
+            padding-bottom: 0;
+            border-radius: 0;
+            border: none;
+
+            &:focus {
+                outline: none;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+.nav-link {
+
+    &.dropdown-toggle {
+        display: flex;
+        align-items: center;
+        margin-left: auto !important;
+
+        &::after {
+            display: none;
+        }
+
+        img {
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 100%;
+            margin-right: 15px;
+        }
+
+        p {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            margin-bottom: 0;
+            line-height: 1.25;
+            margin-right: 10px;
+            color: black;
+
+            strong {
+                font-family: "Inter", sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+}
