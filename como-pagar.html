@@ -55,13 +55,13 @@
                                 </div>
                                 Inicio
                             </a>
-                            <a class="nav-link" href="nuevo-cita.html">
+                            <a class="nav-link nav-link-active" href="nuevo-cita.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-cita.svg" alt="">
                                 </div>
                                 Nueva Cita
                             </a>
-                            <a class="nav-link nav-link-active" href="nuevo-chequeo.html">
+                            <a class="nav-link" href="nuevo-chequeo.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-chequeo.svg" alt="">
                                 </div>
@@ -102,58 +102,37 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div id="js_edit_info" class="container-fluid px-4">
+                    <div id="js_new_chequeo_fam" class="container-fluid px-4">
                         <h2>
                             <img src="assets/img/icon-nuevo-chequeo.svg" alt="">
-                            Editar Información
+                            ¿Cómo deseas pagar?
                         </h2>
-                        <div class="row js_edit_info">
+                        <div class="row js_new_chequeo_fam">
                             
-                            <div class="col-xl-3 col-md-3 js_edit_info_photo">
-                                <div class="card card-active mb-12">
-                                    <div class="card-header">
-                                        <img src="assets/img/icon-camera.svg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h3>Subir foto de perfil</h3>
-                                        <div>
-                                            <a href="#"><img src="assets/img/add-circle.svg" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-md-9 js_edit_info_form">
+                            <div class="col-xl-12 col-md-12">
                                 <div class="card mb-12">
                                     <div class="card-body">
-                                        <form>
-                                            
-                                            <div class="mb-3">
-                                                <label for="inputDni">DNI</label>
-                                                <input class="form-control" id="inputDni" type="number" placeholder="404596587" />
+                                        <div class="row">
+                                            <div class="col-xl-6 col-md-12">
+                                                <h3>Con tarjeta</h3>
+                                                <div>
+                                                    <input id="pagotargeta" type="radio">
+                                                    <label for="pagotargeta">Pago con tarjeta</label>
+                                                </div>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="inputname">Nombres y Apellidos</label>
-                                                <input class="form-control" id="inputname" type="text" placeholder="Maria Espinoza Fernandez" />
+                                            <div class="col-xl-6 col-md-12">
+                                                <h3>Detalle del Seguro</h3>
+                                                <span>Asegurador:</span>
+                                                <p>Sin seguro</p>
+                                                <div>
+                                                    <span>Monto a pagar:</span>
+                                                    <h3>S/ 250.00</h3>
+                                                </div>
+                                                <div>
+                                                    <a href="#">CONTINUAR</a>
+                                                </div>
                                             </div>
-
-                                            <div class="mb-3">
-                                                <label for="inputDate">Fecha de nacimiento</label>
-                                                <input class="form-control" id="inputDate" type="date" />
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="inputmail">Correo</label>
-                                                <input class="form-control" id="inputmail" type="email" placeholder="mespinoza80@gmail.com" />
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="inputFimanciador">Financiador</label>
-                                                <input class="form-control" id="inputFimanciador" type="email" placeholder="RIMAC EPS" />
-                                            </div>
-                                            
-                                            <div class="js_edit_info_btns">
-                                                <a class="btn btn-primary" href="index.html">RESTABLECER</a>
-                                                <a class="btn btn-primary" href="index.html">GUARDAR</a>
-                                            </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
