@@ -29,6 +29,9 @@
 
 $neoBold: 'neometric_bold', sans-serif !important;
 $colorGrey: #434342;
+$white: #ffffff;
+$black: #000000;
+$Aquagreen: #06EAC9;
 
 p {
     font-family: 'avenir_lt', sans-serif;
@@ -139,37 +142,39 @@ h6 {
 
 .btn_grey {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    color: white;
+    font-size: 15px;
+    color: $white;
     background: $colorGrey;
     text-transform: uppercase;
     padding: 12px 25px;
     border-radius: 0 0 30px 0;
     text-decoration: none;
     transition-duration: 0.3s;
+    font-weight: 600;
 
     &:hover {
-        background: black;
-        color: white;
+        background: $black;
+        color: $white;
         transition-duration: 0.3s;
     }
 }
 
 .btn_white {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: $colorGrey;
-    background: #ffffff;
+    background: $white;
     text-transform: uppercase;
     padding: 12px 25px;
     border-radius: 0 0 0 0;
     text-decoration: none;
     transition-duration: 0.3s;
     border: 1px solid $colorGrey;
+    font-weight: 600;
 
     &:hover {
-        background: black;
-        color: white;
+        background: $black;
+        color: $white;
         transition-duration: 0.3s;
     }
 }
@@ -184,7 +189,7 @@ h6 {
 
         &:hover {
             transition-duration: 0.3s;
-            background: black;
+            background: $black;
         }
     }
 }
@@ -245,7 +250,6 @@ div#layoutAuthentication_content {
 
                     h2 {
                         text-align: center;
-                        font-size: 44px;
                         color: $colorGrey;
                     }
 
@@ -361,7 +365,7 @@ div#layoutAuthentication_content {
 
                 &:last-child {
                     color: $colorGrey;
-                    background: #06EAC9;
+                    background: $Aquagreen;
                     font-size: 18px;
                     border-radius: 30px;
                     font-weight: 700;
@@ -379,7 +383,7 @@ div#layoutAuthentication_content {
         .loguin_footer_sec2 {
             padding-top: 25px;
             margin-top: 25px;
-            border-top: 1px solid white;
+            border-top: 1px solid $white;
             display: flex;
             justify-content: space-between;
 
@@ -420,7 +424,7 @@ div#layoutAuthentication_content {
 
 
                     &:first-child {
-                        border-right: 1px solid white;
+                        border-right: 1px solid $white;
                         a {
 
                             img {
@@ -430,7 +434,7 @@ div#layoutAuthentication_content {
                     }
 
                     a {
-                        color: white;
+                        color: $white;
                         font-size: 18px;
                         text-decoration: none;
 
@@ -522,9 +526,9 @@ div#layoutAuthentication_content {
         align-items: center;
         justify-content: center;
         border-radius: 100%;
-        border: 1px solid #06EAC9;
+        border: 1px solid $Aquagreen;
         color: #294292;
-        background: #06EAC9;
+        background: $Aquagreen;
         font-weight: 700;
         line-height: 1;
     }
@@ -602,7 +606,7 @@ div#layoutAuthentication_content {
             border: none;
             width: 100%;
             padding: 16px;
-            color: white;
+            color: $white;
             line-height: 1;
             font-size: 18px;
             text-transform: uppercase;
@@ -718,7 +722,7 @@ div#layoutAuthentication_content {
 
     .card-body {
         border-radius: 0 0 30px 0;
-        background-color: white;
+        background-color: $white;
         padding: 30px;
     }
 
@@ -726,14 +730,6 @@ div#layoutAuthentication_content {
         display: flex;
         justify-content: flex-end;
         margin: 20px 0;
-
-        a {
-            color: #FFFFFF;
-            background: $colorGrey;
-            border-radius: 0 0 15px 0;
-            text-decoration: none;
-            padding: 10px 30px;
-        }
     }
     
 }
@@ -761,7 +757,7 @@ div#layoutAuthentication_content {
         background: transparent;
         border: none;
         margin: 10px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
         padding-bottom: 20px;
 
         img {
@@ -773,7 +769,7 @@ div#layoutAuthentication_content {
         span {
             font-size: 16px;
             font-family: 'avenir_lt', sans-serif;
-            color: white;
+            color: $white;
         }
 
         p {
@@ -781,7 +777,7 @@ div#layoutAuthentication_content {
             font-family: "Inter", sans-serif;
             font-weight: 400;
             margin: 0;
-            color: white;
+            color: $white;
 
             strong {
                 font-size: 20px;
@@ -812,7 +808,7 @@ div#layoutAuthentication_content {
                 font-family: "Inter", sans-serif;
                 font-weight: 700;
                 border: none;
-                color: white;
+                color: $white;
                 padding: 10px;
             }
 
@@ -832,19 +828,10 @@ div#layoutAuthentication_content {
                 font-size: 18px;
                 font-family: 'avenir_lt', sans-serif;
                 border: none;
-                color: white;
+                color: $white;
             }
 
             a {
-                font-family: "Inter", sans-serif;
-                color: white;
-                text-transform: uppercase;
-                font-size: 14px;
-                background: $colorGrey;
-                border-radius: 0 0 15px 0;
-                text-decoration: none;
-                padding: 10px 20px;
-                font-weight: 600;
                 margin-bottom: 15px !important;
                 display: flex;
                 max-width: fit-content;
@@ -881,11 +868,11 @@ div#layoutAuthentication_content {
             text-align: center;
 
             &:first-child {
-                background: #06EAC9;
+                background: $Aquagreen;
             }
 
             &:last-child {
-                background: white;
+                background: $white;
             }
         }
     }
@@ -902,7 +889,7 @@ div#layoutAuthentication_content {
         margin-top: 5px;
 
         a {
-            color: black;
+            color: $black;
             text-decoration: none;
             font-size: 16px;
             font-family: 'avenir_lt', sans-serif;
@@ -910,7 +897,7 @@ div#layoutAuthentication_content {
     }
 
     p {
-        color: black;
+        color: $black;
         font-size: 16px;
         font-family: 'avenir_lt', sans-serif;
         padding-top: 10px;
@@ -966,15 +953,33 @@ div#layoutAuthentication_content {
             padding-top: 0;
 
             a {
-                background: $colorGrey;
-                border-radius: 0 0 15px 0;
-                color: white;
-                text-decoration: none;
-                font-size: 14px;
-                font-family: "Inter", sans-serif;
-                padding: 10px;
                 width: 100%;
                 text-align: center;
+            }
+        }
+
+        &_sumate {
+            padding: 0 !important;
+            padding-bottom: var(--bs-card-spacer-y) !important;
+
+            .card-body {
+                padding: 0 !important;
+
+                p {
+                    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+                    margin-bottom: 0;
+                }
+            }
+
+            .card-footer {
+                padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            }
+
+            img {
+                width: 100%;
+                max-height: 204px;
+                object-fit: cover;
+                object-position: center;
             }
         }
     }
@@ -988,20 +993,6 @@ div#layoutAuthentication_content {
 
 #datatablesFamilieares {
     margin: 0;
-
-    .fam_btn_agendar {
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        color: white;
-        background: $colorGrey;
-        border-radius: 0 0 15px 0;
-        padding: 8px 20px;
-        display: flex;
-        text-decoration: none;
-        text-align: center;
-        justify-content: center;
-    }
 
     table {
         width: 100%;
@@ -1119,7 +1110,7 @@ div#layoutAuthentication_content {
                 font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-weight: 600;
-                color: white;
+                color: $white;
                 background: $colorGrey;
                 border-radius: 0 0 30px 0;
                 text-decoration: none;
@@ -1206,7 +1197,7 @@ div#layoutAuthentication_content {
                     border-radius: 0 0 30px 0;
                     padding: 15px 30px;
                     font-size: 18px;
-                    color: white;
+                    color: $white;
                     text-transform: uppercase;
                     font-family: "Inter", sans-serif;
                     font-weight: 600;
@@ -1252,13 +1243,13 @@ div#layoutAuthentication_content {
             transition-duration: 0.3s;
 
             a {
-                color: white !important;
-                border-color: white !important;
+                color: $white !important;
+                border-color: $white !important;
                 transition-duration: 0.3s;
             }
 
             h3 {
-                color: white !important;
+                color: $white !important;
                 transition-duration: 0.3s;
             }
         }
@@ -1309,20 +1300,20 @@ div#layoutAuthentication_content {
         transition-duration: 0.3s;
 
         a {
-            color: white !important;
-            border-color: white !important;
+            color: $white !important;
+            border-color: $white !important;
             transition-duration: 0.3s;
         }
 
         h3 {
-            color: white !important;
+            color: $white !important;
             transition-duration: 0.3s;
         }
     }
 }
 
 .js__centros_info {
-    background: white;
+    background: $white;
     border-radius: 0 0 30px 0;
     padding: 45px;
     margin-bottom: 80px;
@@ -1437,27 +1428,6 @@ div#layoutAuthentication_content {
             display: flex;
             justify-content: space-between;
             margin-top: 25px;
-
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: 14px;
-                font-family: "Inter", sans-serif;
-                font-weight: 700;
-                border-radius: 0 0 16px 0;
-                padding: 10px 25px;
-
-                &:nth-child(1) {
-                    color: $colorGrey;
-                    border: 2px solid $colorGrey;
-                }
-
-                &:nth-child(2) {
-                    color: #fff;
-                    border: 2px solid $colorGrey;
-                    background: $colorGrey;
-                }
-            }
         }
     }
 }
@@ -1472,7 +1442,7 @@ div#layoutAuthentication_content {
         width: 100%;
         padding: 10px;
         border-radius: 0 0 20px 0;
-        background-color: white;
+        background-color: $white;
 
         button {
             background: $colorGrey;
@@ -1486,7 +1456,7 @@ div#layoutAuthentication_content {
             transition-duration: 0.3s;
 
             &:hover {
-                background: black;
+                background: $black;
                 transition-duration: 0.3s;
             }
 
@@ -1504,7 +1474,7 @@ div#layoutAuthentication_content {
         display: flex;
         max-width: fit-content;
         background: $colorGrey;
-        color: white;
+        color: $white;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px;
@@ -1517,7 +1487,7 @@ div#layoutAuthentication_content {
         align-items: center;
 
         &:hover {
-            color: white;
+            color: $white;
         }
         
         img {
@@ -1584,18 +1554,8 @@ div#layoutAuthentication_content {
             justify-content: space-between;
 
             a {
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: 14px;
-                font-family: "Inter", sans-serif;
-                font-weight: 500;
-                border-radius: 0 0 16px 0;
-                padding: 10px 25px;
                 width: 100%;
-                color: white;
-                background-color: $colorGrey;
                 text-align: center;
-                font-family: "Inter", sans-serif;
             }
         }
 
@@ -1717,7 +1677,7 @@ div#layoutAuthentication_content {
 
     .js__aceptar_cont {
         width: 450px;
-        background: white;
+        background: $white;
         border-radius: 30px;
 
         div {
@@ -1747,28 +1707,16 @@ div#layoutAuthentication_content {
                     justify-content: center;
                 }
 
-                h2 {
+                h4 {
                     text-align: center;
-                    font-size: 32px;
-                    font-family: "Inter", sans-serif;
                     font-weight: 600;
                     margin: 20px 0;
                 }
 
                 a {
-                    font-family: "Inter", sans-serif;
-                    font-weight: 600;
-                    font-size: 14px;
-                    color: white;
-                    text-transform: uppercase;
-                    background: $colorGrey;
-                    border-radius: 0 0 15px 0;
-                    padding: 10px 30px;
                     width: 100%;
                     display: flex;
                     justify-content: center;
-                    text-decoration: none;
-                    border: 1px solid $colorGrey;
                 }
             }
         }
@@ -1823,7 +1771,7 @@ div#layoutAuthentication_content {
         .card {
             background: #E5F2F1;
             border-radius: 100%;
-            border: 5px solid white;
+            border: 5px solid $white;
             width: 200px;
             height: 200px;
             display: flex;
@@ -1865,6 +1813,7 @@ div#layoutAuthentication_content {
     .card {
         border-radius: 0 !important;
         border: none;
+        padding: 25px !important;
     }
 
     form {
@@ -1886,36 +1835,25 @@ div#layoutAuthentication_content {
             border: none;
         }
 
+        select {
+            color: $colorGrey;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 10px;
+            background: #E5F2F1;
+            border: none;
+            width: 100%;
+        }
+
         .js_edit_info_btns {
             display: flex;
             justify-content: flex-end;
             margin: 25px 0;
 
             a {
-                padding: 10px 25px;
                 
                 &:nth-child(1) {
-                    color: $colorGrey;
-                    font-family: "Inter", sans-serif;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    border: $colorGrey 1px solid;
                     margin-right: 8px;
-                    border-radius: 0;
-                    background: transparent;
-                }
-
-                &:nth-child(2) {
-                    color: #fff;
-                    font-family: "Inter", sans-serif;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    border: $colorGrey 1px solid;
-                    margin-right: 8px;
-                    border-radius: 0 0 30px 0;
-                    background: $colorGrey;
                 }
             }
         }

@@ -123,24 +123,25 @@ h6 strong {
 
 .btn_grey {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: 15px;
+  color: #ffffff;
   background: #434342;
   text-transform: uppercase;
   padding: 12px 25px;
   border-radius: 0 0 30px 0;
   text-decoration: none;
   transition-duration: 0.3s;
+  font-weight: 600;
 }
 .btn_grey:hover {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
   transition-duration: 0.3s;
 }
 
 .btn_white {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #434342;
   background: #ffffff;
   text-transform: uppercase;
@@ -149,10 +150,11 @@ h6 strong {
   text-decoration: none;
   transition-duration: 0.3s;
   border: 1px solid #434342;
+  font-weight: 600;
 }
 .btn_white:hover {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
   transition-duration: 0.3s;
 }
 
@@ -164,7 +166,7 @@ h6 strong {
 }
 .sb-topnav .btn-primary:hover {
   transition-duration: 0.3s;
-  background: black;
+  background: #000000;
 }
 
 div#layoutSidenav_content {
@@ -217,7 +219,6 @@ div#layoutAuthentication_content main .js_loguin_secform .card .card-body {
 }
 div#layoutAuthentication_content main .js_loguin_secform .card .card-body h2 {
   text-align: center;
-  font-size: 44px;
   color: #434342;
 }
 div#layoutAuthentication_content main .js_loguin_secform .card .card-body p {
@@ -316,7 +317,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 #layoutAuthentication_footer footer .loguin_footer_sec2 {
   padding-top: 25px;
   margin-top: 25px;
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff;
   display: flex;
   justify-content: space-between;
 }
@@ -347,13 +348,13 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   margin-right: 10px;
 }
 #layoutAuthentication_footer footer .loguin_footer_sec2 ul li:first-child {
-  border-right: 1px solid white;
+  border-right: 1px solid #ffffff;
 }
 #layoutAuthentication_footer footer .loguin_footer_sec2 ul li:first-child a img {
   margin-right: 8px;
 }
 #layoutAuthentication_footer footer .loguin_footer_sec2 ul li a {
-  color: white;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
   padding-right: 15px;
@@ -485,7 +486,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   border: none;
   width: 100%;
   padding: 16px;
-  color: white;
+  color: #ffffff;
   line-height: 1;
   font-size: 18px;
   text-transform: uppercase;
@@ -568,20 +569,13 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 .inicio_historial .card-body {
   border-radius: 0 0 30px 0;
-  background-color: white;
+  background-color: #ffffff;
   padding: 30px;
 }
 .inicio_historial .inicio_historial_btn {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
-}
-.inicio_historial .inicio_historial_btn a {
-  color: #FFFFFF;
-  background: #434342;
-  border-radius: 0 0 15px 0;
-  text-decoration: none;
-  padding: 10px 30px;
 }
 
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
@@ -605,7 +599,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   background: transparent;
   border: none;
   margin: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   padding-bottom: 20px;
 }
 .inicio_fam_regist .card-header img {
@@ -617,14 +611,14 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 .inicio_fam_regist .card-header span {
   font-size: 16px;
   font-family: "avenir_lt", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 .inicio_fam_regist .card-header p {
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   margin: 0;
-  color: white;
+  color: #ffffff;
 }
 .inicio_fam_regist .card-header p strong {
   font-size: 20px;
@@ -648,7 +642,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 10px;
 }
 .inicio_fam_regist .card-body thead tr {
@@ -662,18 +656,9 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   font-size: 18px;
   font-family: "avenir_lt", sans-serif;
   border: none;
-  color: white;
+  color: #ffffff;
 }
 .inicio_fam_regist .card-body tbody a {
-  font-family: "Inter", sans-serif;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14px;
-  background: #434342;
-  border-radius: 0 0 15px 0;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: 600;
   margin-bottom: 15px !important;
   display: flex;
   max-width: -moz-fit-content;
@@ -709,7 +694,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   background: #06EAC9;
 }
 .inicio_fam_regist .inicio_historial_btns a:last-child {
-  background: white;
+  background: #ffffff;
 }
 
 /* ----- footer ----- */
@@ -722,13 +707,13 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   margin-top: 5px;
 }
 .sb-sidenav-footer li a {
-  color: black;
+  color: #000000;
   text-decoration: none;
   font-size: 16px;
   font-family: "avenir_lt", sans-serif;
 }
 .sb-sidenav-footer p {
-  color: black;
+  color: #000000;
   font-size: 16px;
   font-family: "avenir_lt", sans-serif;
   padding-top: 10px;
@@ -776,15 +761,30 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   padding-top: 0;
 }
 .js__inicio_card_med .card .card-footer a {
-  background: #434342;
-  border-radius: 0 0 15px 0;
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  padding: 10px;
   width: 100%;
   text-align: center;
+}
+.js__inicio_card_med .card_sumate {
+  padding: 0 !important;
+  padding-bottom: var(--bs-card-spacer-y) !important;
+}
+.js__inicio_card_med .card_sumate .card-body {
+  padding: 0 !important;
+}
+.js__inicio_card_med .card_sumate .card-body p {
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  margin-bottom: 0;
+}
+.js__inicio_card_med .card_sumate .card-footer {
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+}
+.js__inicio_card_med .card_sumate img {
+  width: 100%;
+  max-height: 204px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .familiares_new {
@@ -795,19 +795,6 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 
 #datatablesFamilieares {
   margin: 0;
-}
-#datatablesFamilieares .fam_btn_agendar {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: white;
-  background: #434342;
-  border-radius: 0 0 15px 0;
-  padding: 8px 20px;
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
 }
 #datatablesFamilieares table {
   width: 100%;
@@ -891,7 +878,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: white;
+  color: #ffffff;
   background: #434342;
   border-radius: 0 0 30px 0;
   text-decoration: none;
@@ -966,7 +953,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   border-radius: 0 0 30px 0;
   padding: 15px 30px;
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -1001,12 +988,12 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   transition-duration: 0.3s;
 }
 .js_centros_content .card:hover a {
-  color: white !important;
-  border-color: white !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
   transition-duration: 0.3s;
 }
 .js_centros_content .card:hover h3 {
-  color: white !important;
+  color: #ffffff !important;
   transition-duration: 0.3s;
 }
 .js_centros_content .card img {
@@ -1047,17 +1034,17 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   transition-duration: 0.3s;
 }
 .js_centros_content .card-active a {
-  color: white !important;
-  border-color: white !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
   transition-duration: 0.3s;
 }
 .js_centros_content .card-active h3 {
-  color: white !important;
+  color: #ffffff !important;
   transition-duration: 0.3s;
 }
 
 .js__centros_info {
-  background: white;
+  background: #ffffff;
   border-radius: 0 0 30px 0;
   padding: 45px;
   margin-bottom: 80px;
@@ -1143,24 +1130,6 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   justify-content: space-between;
   margin-top: 25px;
 }
-.js_staff_content .card-body div a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  border-radius: 0 0 16px 0;
-  padding: 10px 25px;
-}
-.js_staff_content .card-body div a:nth-child(1) {
-  color: #434342;
-  border: 2px solid #434342;
-}
-.js_staff_content .card-body div a:nth-child(2) {
-  color: #fff;
-  border: 2px solid #434342;
-  background: #434342;
-}
 
 .js_staff_search {
   display: flex;
@@ -1172,7 +1141,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   width: 100%;
   padding: 10px;
   border-radius: 0 0 20px 0;
-  background-color: white;
+  background-color: #ffffff;
 }
 .js_staff_search form button {
   background: #434342;
@@ -1186,7 +1155,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   transition-duration: 0.3s;
 }
 .js_staff_search form button:hover {
-  background: black;
+  background: #000000;
   transition-duration: 0.3s;
 }
 .js_staff_search form button img {
@@ -1200,7 +1169,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   max-width: -moz-fit-content;
   max-width: fit-content;
   background: #434342;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -1214,7 +1183,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   align-items: center;
 }
 .js_staff_search a:hover {
-  color: white;
+  color: #ffffff;
 }
 .js_staff_search a img {
   margin-right: 8px;
@@ -1269,18 +1238,8 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   justify-content: space-between;
 }
 .js_new_chequeo_fam .card-body div a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  border-radius: 0 0 16px 0;
-  padding: 10px 25px;
   width: 100%;
-  color: white;
-  background-color: #434342;
   text-align: center;
-  font-family: "Inter", sans-serif;
 }
 .js_new_chequeo_fam .card-body p {
   margin: 20px 0;
@@ -1373,7 +1332,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 .js__aceptar .js__aceptar_cont {
   width: 450px;
-  background: white;
+  background: #ffffff;
   border-radius: 30px;
 }
 .js__aceptar .js__aceptar_cont div:nth-child(1) {
@@ -1398,27 +1357,15 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   display: flex;
   justify-content: center;
 }
-.js__aceptar .js__aceptar_cont div:nth-child(2) h2 {
+.js__aceptar .js__aceptar_cont div:nth-child(2) h4 {
   text-align: center;
-  font-size: 32px;
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   margin: 20px 0;
 }
 .js__aceptar .js__aceptar_cont div:nth-child(2) a {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: white;
-  text-transform: uppercase;
-  background: #434342;
-  border-radius: 0 0 15px 0;
-  padding: 10px 30px;
   width: 100%;
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  border: 1px solid #434342;
 }
 .js__aceptar .js__aceptar_btns {
   display: flex;
@@ -1453,7 +1400,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 .js_edit_info .js_edit_info_photo .card {
   background: #E5F2F1;
   border-radius: 100%;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   width: 200px;
   height: 200px;
   display: flex;
@@ -1483,6 +1430,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 .js_edit_info_form .card {
   border-radius: 0 !important;
   border: none;
+  padding: 25px !important;
 }
 .js_edit_info_form form label {
   font-size: 18px;
@@ -1499,33 +1447,20 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   background: #E5F2F1;
   border: none;
 }
+.js_edit_info_form form select {
+  color: #434342;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  background: #E5F2F1;
+  border: none;
+  width: 100%;
+}
 .js_edit_info_form form .js_edit_info_btns {
   display: flex;
   justify-content: flex-end;
   margin: 25px 0;
 }
-.js_edit_info_form form .js_edit_info_btns a {
-  padding: 10px 25px;
-}
 .js_edit_info_form form .js_edit_info_btns a:nth-child(1) {
-  color: #434342;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: #434342 1px solid;
   margin-right: 8px;
-  border-radius: 0;
-  background: transparent;
-}
-.js_edit_info_form form .js_edit_info_btns a:nth-child(2) {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: #434342 1px solid;
-  margin-right: 8px;
-  border-radius: 0 0 30px 0;
-  background: #434342;
 }/*# sourceMappingURL=loguin.css.map */
