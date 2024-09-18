@@ -17,17 +17,20 @@
   font-weight: normal;
   font-style: normal;
 }
-p {
+p,
+li {
   font-family: "avenir_lt", sans-serif;
   font-size: 18px;
   line-height: 1.3;
 }
 @media (max-width: 650px) {
-  p {
+  p,
+  li {
     font-size: 16px;
   }
 }
-p strong {
+p strong,
+li strong {
   font-weight: 700;
 }
 
@@ -128,7 +131,7 @@ h6 strong {
   background: #434342;
   text-transform: uppercase;
   padding: 12px 25px;
-  border-radius: 0 0 30px 0;
+  border-radius: 0 0 15px 0;
   text-decoration: none;
   transition-duration: 0.3s;
   font-weight: 600;
@@ -1086,12 +1089,14 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 
 /* ----- directorio medico ----- */
-#js_staff_content h6 {
+#js_staff_content h6,
+#js_staff_content h5 {
   color: #434342;
   margin-bottom: 20px !important;
   font-weight: 700 !important;
 }
-#js_staff_content h6 img {
+#js_staff_content h6 img,
+#js_staff_content h5 img {
   margin-right: 8px;
 }
 
@@ -1375,9 +1380,16 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   max-width: 48%;
 }
 .js__aceptar .js__aceptar_btns a:nth-child(1) {
-  color: #434342 !important;
-  background: transparent !important;
   border-radius: 0 !important;
+}
+.js__aceptar .js__aceptar_twobtns {
+  justify-content: space-around;
+}
+.js__aceptar .js__aceptar_twobtns a {
+  font-size: 14px !important;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+  padding: 12px 20px !important;
 }
 .js__aceptar .js__aceptar_btn {
   display: flex;
@@ -1385,6 +1397,9 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 .js__aceptar .js__aceptar_btn a {
   max-width: 100%;
+}
+.js__aceptar .js__aceptar_btn a.btn_white {
+  margin-right: 10px;
 }
 
 /* ----- editar info ----- */
@@ -1463,4 +1478,151 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 .js_edit_info_form form .js_edit_info_btns a:nth-child(1) {
   margin-right: 8px;
+}
+
+/* ------ como pagar ------ */
+.js_como_pagar .card {
+  padding: 40px;
+  border-radius: 0 0 30px 0;
+}
+.js_como_pagar_medio {
+  border-right: 1px solid #BEBEBE;
+}
+@media (max-width: 1200px) {
+  .js_como_pagar_medio {
+    border-right: none;
+    padding-left: 0 !important;
+  }
+}
+.js_como_pagar_medio div {
+  border: 2px solid black;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.js_como_pagar_medio div label {
+  font-size: 16px;
+  color: black;
+}
+.js_como_pagar_info {
+  padding-left: 50px !important;
+}
+@media (max-width: 1200px) {
+  .js_como_pagar_info {
+    padding-left: 0 !important;
+    margin-top: 25px !important;
+  }
+}
+.js_como_pagar_monto {
+  background: #06EAC9;
+  border-radius: 0 0 30px 0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.js_como_pagar .btn_grey {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+/* ----- pop-up medico ----- */
+.js__select_med_cont div:nth-child(2) img {
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 30px !important;
+}
+.js__select_med_cont p {
+  font-size: 16px;
+}
+.js__select_med_cont h6 {
+  margin-bottom: 15px;
+}
+.js__select_med_cont .js__aceptar_btns a {
+  max-width: 48%;
+  width: 100%;
+}
+.js__select_med_cont .js__aceptar_btns a:hover {
+  background: #000000;
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* ----- programa de salud ----- */
+.js__programa .card {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 0 0 30px 0;
+}
+.js__programa .card ul {
+  margin-top: 40px;
+}
+.js__programa .card ul li {
+  color: #434342;
+  margin: 20px 0;
+  position: relative;
+  list-style: none;
+}
+.js__programa .card ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../../assets/img/icon-check.svg);
+  position: absolute;
+  left: -30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.js__programa .card .js__programa_beneficios {
+  border-right: 1px solid #BEBEBE;
+}
+.js__programa .card .js__programa_beneficios_otros {
+  padding-left: 20px !important;
+}
+.js__programa .card .js__programa_precio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.js__programa .card .js__programa_precio h2,
+.js__programa .card .js__programa_precio p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.js__programa .card .js__programa_precio .js__aceptar_btns {
+  display: flex;
+  justify-content: flex-end;
+}
+.js__programa .card .js__programa_precio .js__aceptar_btns .btn_white {
+  margin-right: 15px;
+}
+.js__programa table {
+  width: 100%;
+}
+.js__programa table thead {
+  background: #00D2B4;
+}
+.js__programa table thead tr th {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+}
+.js__programa table td {
+  padding: 10px;
+}
+.js__programa table tbody tr {
+  background: #E5F2F1;
+}
+.js__programa table tbody tr:nth-child(2n) {
+  background: #ffffff;
+}
+.js__programa .datatable-top {
+  display: none;
+}
+
+.js_staff_especialidad {
+  margin-top: 40px !important;
 }/*# sourceMappingURL=loguin.css.map */
