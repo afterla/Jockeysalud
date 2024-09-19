@@ -124,6 +124,26 @@ h6 strong {
   font-family: "neometric_bold", sans-serif !important;
 }
 
+form label {
+  font-size: 18px;
+  color: #434342;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+form input,
+form select {
+  color: #434342 !important;
+  font-size: 18px !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  background: #E5F2F1 !important;
+  border: none !important;
+}
+form select {
+  width: 100% !important;
+}
+
 .btn_grey {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -1625,4 +1645,18 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 
 .js_staff_especialidad {
   margin-top: 40px !important;
-}/*# sourceMappingURL=loguin.css.map */
+}
+
+.icons_tarjetas {
+  margin-bottom: 20px;
+}
+
+.js_pago_tarjeta {
+  display: flex;
+  justify-content: flex-end;
+}
+.js_pago_tarjeta .btn_white {
+  margin-right: 15px;
+}
+
+/* ----- agendar cita ----- *//*# sourceMappingURL=loguin.css.map */

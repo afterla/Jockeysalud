@@ -139,6 +139,31 @@ h6 {
     }
 }
 
+form {
+
+    label {
+        font-size: 18px;
+        color: #434342;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 7px;
+        font-weight: 600;
+    }
+
+    input,
+    select {
+        color: #434342 !important;
+        font-size: 18px !important;
+        border-radius: 10px !important;
+        padding: 10px !important;
+        background: #E5F2F1 !important;
+        border: none !important;
+    }
+
+    select {
+        width: 100% !important;
+    }
+}
+
 
 
 .btn_grey {
@@ -2073,3 +2098,20 @@ div#layoutAuthentication_content {
 .js_staff_especialidad {
     margin-top: 40px !important;
 }
+
+.icons_tarjetas {
+    margin-bottom: 20px;
+}
+
+.js_pago_tarjeta {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn_white {
+        margin-right: 15px;
+    }
+}
+
+
+/* ----- agendar cita ----- */
+
