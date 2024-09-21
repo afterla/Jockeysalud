@@ -185,6 +185,25 @@ form {
     }
 }
 
+.btn_green {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: $colorGrey;
+    background: $Aquagreen;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 0 0 15px 0;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-weight: 600;
+
+    &:hover {
+        background: $black;
+        color: $white;
+        transition-duration: 0.3s;
+    }
+}
+
 .btn_white {
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -2114,4 +2133,160 @@ div#layoutAuthentication_content {
 
 
 /* ----- agendar cita ----- */
+.js__citas_agendar {
+    padding: 30px;
 
+    &_datos {
+        padding-right: 30px !important;
+        border-right: 1px solid #BEBEBE;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        div {
+            padding: 10px;
+            margin-bottom: 12px;
+
+            &:nth-child(2n) {
+                background: #E5F2F1;
+            }
+        }
+    }
+
+    &_cobertura {
+        padding-left: 30px !important;
+
+        div {
+
+            label {
+                display: flex;
+                border: 1px solid $colorGrey;
+                border-radius: 0 0 30px 0;
+                padding: 25px;
+                margin: 20px 0;
+                align-items: baseline;
+
+                strong {
+                    font-size: 30px;
+                }
+
+                input {
+                    margin-right: 10px;
+                }
+
+                &:has(input[type="radio"]:checked) {
+                    background: $Aquagreen;
+                    border-color: $Aquagreen;
+                }
+            }
+        }
+    }
+}
+
+
+/* ----- citas ----- */
+
+.js_filter_citas_btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.js_citas {
+
+    .card {
+        padding: 20px;
+        border-radius: 0 0 30px 0;
+        margin-bottom: 30px;
+    }
+}
+.js_filter_citas {
+
+    .active {
+        background: $colorGrey !important;
+        color: white !important;
+        text-transform: uppercase;
+        padding: 10px 20px !important;
+        border: none !important;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px !important;
+        text-transform: uppercase;
+    }
+
+    .js_filter_citas_content {
+        padding-top: 25px;
+        
+        p {
+            margin-bottom: 10px !important;
+        }
+
+        .box {
+            margin-bottom: 30px;
+            padding: 15px 0;
+
+            &:nth-child(2n) {
+                background: #E5F2F1;
+            }
+
+            div:nth-child(3) {
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 20px;
+
+                    a {
+                        margin-right: 12px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ----- citas ----- */
+
+.js__agendar_calendario_horario {
+
+    .card {
+        border-radius: 0 0 30px 0;
+        padding: 30px;
+    }
+}
+.js__agendar_calendar {
+
+    .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+        width: 100%;
+        border: none !important;
+
+        .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+            background: transparent;
+            border: none;
+        }
+
+        td {
+
+            a {
+                border: none !important;
+                background: transparent;
+                padding: 10px 0px;
+                text-align: center;
+                font-size: 20px;
+
+                &.ui-state-default.ui-state-active {
+                    background: $Aquagreen;
+                    color: white;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

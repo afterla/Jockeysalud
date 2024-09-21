@@ -6,10 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agendar cita</title>
+        <title>Agendar fecha</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> 
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand">
@@ -107,58 +113,17 @@
                             <img src="assets/img/icon-nuevo-chequeo.svg" alt="">
                             Agendar cita
                         </h6>
-                        <div class="row ">
+                        <div class="row js__agendar_calendario_horario ">
                             
                             <div class="col-xl-12 col-md-12">
                                 <div class="card mb-12">
                                     <div class="card-body">
-                                        <div class="row js__citas_agendar">
-                                            <div class="col-xl-6 col-md-12 js__citas_agendar_datos">
-                                                <h6>Datos de la cita</h6>
-                                                <div>
-                                                    <p>Médico:</p>
-                                                    <p><strong>Camacho Honorio Arroyo Galo Eduardo</strong></p>
-                                                </div>
-                                                <div>
-                                                    <p>Especialidad:</p>
-                                                    <p><strong>Medicina Física y Rehabilitación</strong></p>
-                                                </div>
-                                                <div>
-                                                    <p>Fecha:</p>
-                                                    <p><strong>30 Marzo de 2024</strong></p>
-                                                </div>
-                                                <div>
-                                                    <p>Hora:</p>
-                                                    <p><strong>10:30 a.m.</strong></p>
-                                                </div>
-                                                <div>
-                                                    <p>Tipo de consulta:</p>
-                                                    <p><strong>Presencial</strong></p>
-                                                </div>
-                                                <div>
-                                                    <p>Piso:</p>
-                                                    <p><strong>Medicina Física - Piso 4</strong></p>
-                                                </div>
-                                                
+                                        <div class="row js__calendario">
+                                            <div class="col-xl-6 col-md-12 js__agendar_calendar">
+                                                <div id="datepicker"></div>
                                             </div>
-                                            <div class="col-xl-6 col-md-12 js__citas_agendar_cobertura">
-                                                <h6>Tipo de cobertura</h6>
-                                                <p>Seleccione el tipo de cobertura que desea utilizar: </p>
-                                                <div>
-                                                    <label for="particular">
-                                                        <input name="citaseguro" id="particular" type="radio"><p>Particular:<br><strong>S/ 250.00</strong></p>
-                                                    </label>
-                                                    <label for="serugo">
-                                                        <input name="citaseguro" id="serugo" type="radio"><p>Seguro:<br><strong>S/ 200.00</strong></p>
-                                                    </label>
-                                                    <label for="jockeyfamilia">
-                                                        <input name="citaseguro" id="jockeyfamilia" type="radio"><p>Jockey Familia:<br><strong>S/ 150.00</strong></p>
-                                                    </label>
-                                                </div>
-                                                <div class="js_pago_tarjeta">
-                                                    <a class=" btn_white" href="index.html">ATRÁS</a>
-                                                    <a class=" btn_grey" href="index.html">AGENDAR CITA</a>
-                                                </div>
+                                            <div class="col-xl-6 col-md-12 js__calendario">
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -177,5 +142,8 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <script>
+            $("#datepicker").datepicker();
+        </script>
     </body>
 </html>
