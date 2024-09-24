@@ -1791,4 +1791,52 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   background: #06EAC9;
   color: white;
   border-radius: 10px;
+}
+
+.js__calendario_info_doc {
+  display: flex;
+  align-items: center;
+  background: #06EAC9;
+  border-radius: 0 0 30px 0;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+.js__calendario_info_doc p {
+  color: white;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.js__calendario_info h6 {
+  max-width: 310px;
+}
+.js__calendario_info div label {
+  border: 1px solid #434342;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 20px 0;
+  align-items: baseline;
+  position: relative;
+  font-size: 18px;
+  margin: 7px;
+}
+.js__calendario_info div label strong {
+  font-size: 30px;
+}
+.js__calendario_info div label input {
+  margin-right: 10px;
+  opacity: 0;
+  position: absolute;
+}
+.js__calendario_info div label:has(input[type=radio]:checked) {
+  background: #06EAC9;
+  border-color: #06EAC9;
+  font-weight: 700;
+}
+.js__calendario_info .js__aceptar_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.js__calendario_info .js__aceptar_btns a.btn_white {
+  margin-right: 15px;
 }/*# sourceMappingURL=loguin.css.map */
