@@ -2260,8 +2260,11 @@ div#layoutAuthentication_content {
         border-radius: 0 0 30px 0;
         padding: 30px;
     }
+    
 }
 .js__agendar_calendar {
+    padding-right: 40px;
+    border-right: 1px solid #BEBEBE;
 
     .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
         width: 100%;
@@ -2293,6 +2296,7 @@ div#layoutAuthentication_content {
 
 
 .js__calendario_info {
+    padding-left: 40px !important;
 
     &_doc {
         display: flex;
@@ -2352,6 +2356,212 @@ div#layoutAuthentication_content {
             &.btn_white {
                 margin-right: 15px;
             }
+        }
+    }
+
+    &_terms {
+        font-family: 'avenir_lt', sans-serif;
+        margin: 60px 0;
+    }
+}
+
+/* ----- Buscar medico ----- */
+
+#js_staff_content {
+
+    .js__subtitle_img {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+.js__subtitle_img {
+    display: flex;
+    align-items: center;
+    
+
+    img {
+        max-width: 30px;
+        padding: 0;
+        width: 100%;
+        margin-right: 8px;
+    }
+}
+
+.js__subtitle_img_result {
+    font-weight: 400 !important;
+
+    strong {
+        font-weight: 700 !important;
+    }
+}
+
+.js__subtitle {
+    margin-bottom: 20px;
+}
+
+.js__subtitle_filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h6 {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+
+    div {
+        display: flex;
+        max-width: fit-content;
+        margin-bottom: 20px;
+        
+
+        label {
+            color: $colorGrey;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            min-width: 80px;
+            text-align: center;
+            margin-right: 8px;
+
+            &:hover {
+                background: $Aquagreen;
+                border-color: $Aquagreen;
+            }
+
+            input {
+                opacity: 0;
+                position: absolute;
+            }
+
+            &:has(input[type="radio"]:checked) {
+                background: $Aquagreen;
+                border-color: $Aquagreen;
+            }
+        }
+    }
+}
+
+.js__select_med_user {
+    display: flex;
+    margin-top: 30px !important;
+
+    img {
+        max-width: 40px;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        object-fit: contain;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.js__select_med_filter {
+    margin-top: 30px !important;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            width: 170px;
+            background: $white;
+
+            &.active {
+                background: $Aquagreen;
+
+                a {
+                    font-weight: 700;
+                }
+            }
+
+            &:nth-child(1) {
+                border-radius: 50px 0 0 50px;
+            }
+
+            &:nth-child(2) {
+                border-radius: 0 50px 50px 0;
+            }
+
+            &:hover {
+                background: $Aquagreen;
+                transition-duration: 0.3s;
+            }
+
+            a {
+                font-size: 18;
+                color: $colorGrey;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.js__select_med {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px !important;
+
+    .form-control {
+        background-color: transparent !important;
+    }
+
+    form {
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+/* ----- Buscar medico especialidades ----- */
+.js_buscar_med_espec {
+
+    .card-active {
+        background: $colorGrey;
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
+}
+
+
+.js_reagendar {
+    margin-top: 30px;
+
+    .js__select_med_user {
+        margin-bottom: 30px;
+    }
+
+    h6 {
+        
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#js_new_chequeo_fam.js_reagendar {
+    h6 {
+        
+        &:first-child {
+            margin-bottom: 50px !important;
         }
     }
 }
