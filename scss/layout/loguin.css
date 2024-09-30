@@ -199,6 +199,19 @@ form select {
   transition-duration: 0.3s;
 }
 
+.btn_leido {
+  margin: auto;
+  display: flex;
+  background: transparent;
+  border: none;
+  margin-top: 20px;
+  align-items: center;
+}
+.btn_leido img {
+  max-width: 22px;
+  margin-right: 5px;
+}
+
 .sb-topnav .btn-primary {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2013,4 +2026,143 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 
 #js_new_chequeo_fam.js_reagendar h6:first-child {
   margin-bottom: 50px !important;
+}
+
+.js__especialidades_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px !important;
+}
+.js__especialidades_pagination li {
+  list-style: none;
+}
+.js__especialidades_pagination li button,
+.js__especialidades_pagination li a {
+  background: #878787;
+  font-size: 18px;
+  border-radius: 100% !important;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+.js__especialidades_pagination li button:hover,
+.js__especialidades_pagination li a:hover {
+  background: #06EAC9;
+  color: #434342;
+}
+.js__especialidades_pagination li.active a,
+.js__especialidades_pagination li.active button {
+  background: #06EAC9;
+}
+
+.card_new_fam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_new_fam img {
+  max-width: 90%;
+}
+.card_new_fam .card-body {
+  flex: none;
+}
+.card_new_fam .card-body a {
+  font-size: 16px;
+  color: #434342;
+  font-weight: 700;
+  text-decoration: none;
+}
+.card_new_fam a {
+  display: flex;
+  margin: auto;
+}
+
+.card_fam {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+.card_fam .card {
+  height: 100%;
+}
+.card_fam .card-body {
+  padding-bottom: 0;
+}
+
+.no-citas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-citas h4 {
+  margin: 15px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nav_notification .pop_noti_header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_notification .pop_noti_header button {
+  color: #06EAC9;
+  border: 2px solid #06EAC9;
+  border-radius: 100%;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  font-size: 15px;
+}
+.nav_notification h6 {
+  padding: 0 12px 12px 12px;
+}
+.nav_notification ul.dropdown-menu {
+  width: 390px;
+  right: 50% !important;
+  left: auto;
+  transform: translateX(50%);
+  padding: 25px 0 !important;
+}
+.nav_notification ul.dropdown-menu div {
+  padding: 0 5px !important;
+}
+.nav_notification ul.dropdown-menu img {
+  width: 100%;
+}
+.nav_notification ul.dropdown-menu .noti_date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px !important;
+}
+.nav_notification ul.dropdown-menu .row {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 !important;
+}
+.nav_notification ul.dropdown-menu p {
+  font-size: 12px;
+  margin-bottom: 0 !important;
+}
+.nav_notification ul.dropdown-menu p strong {
+  font-size: 14px;
+}
+.nav_notification ul.dropdown-menu .js_filter_citas_btns {
+  margin-bottom: 25px;
+}
+.nav_notification ul.dropdown-menu .js_filter_citas_btns button {
+  padding: 10px !important;
+}
+.nav_notification ul.dropdown-menu .js_filter_citas_content .box:nth-child(2n) {
+  background: transparent;
 }/*# sourceMappingURL=loguin.css.map */

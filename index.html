@@ -26,6 +26,69 @@
             </form>
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto me-3 me-lg-4">
+                <li class="nav-item dropdown nav_notification">
+                    
+                    <button  onclick="openbtnfix1()" class="btn cancel"><img src="assets/img/icon-notification.svg" alt=""></button>
+                    <ul id="jtk_btns_fix1_popup" class="dropdown-menu">
+                        <div class="js_filter_citas">
+                            <div class="pop_noti_header">
+                                <h6><strong>Notificaciones</strong></h6>
+                                <button type="button" class="btn cancel" onclick="closefix1()">X</button>
+                            </div>
+                            <div class="js_filter_citas_btns">
+                                <div>
+                                    <button class="active btn" id="all">Todas</button>
+                                    <button class="btn" id="a">NUEVAS</button>
+                                </div>
+                            </div>
+                        
+                        
+                            <div id="parent" class="js_filter_citas_content">
+                                
+                                <div class="box a row">
+                                    <div class="col-xl-2 col-md-12">
+                                        <img src="assets/img/doctor.png" alt="">
+                                    </div>
+                                    <div class="col-xl-10 col-md-12">
+                                        <p><strong>Medicina Física y Rehabilitación</strong></p>
+                                        <p>Camacho Honorio Arroyo Galo Eduardo</p>
+                                        <div class="noti_date">
+                                            <p>CITA</p>
+                                            <p>1 Julio,2024 - 10:15 a.m</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box b row">
+                                    <div class="col-xl-2 col-md-12">
+                                        <img src="assets/img/doctor.png" alt="">
+                                    </div>
+                                    <div class="col-xl-10 col-md-12">
+                                        <p><strong>Medicina Física y Rehabilitación</strong></p>
+                                        <p>Camacho Honorio Arroyo Galo Eduardo</p>
+                                        <div class="noti_date">
+                                            <p>CITA</p>
+                                            <p>1 Julio,2024 - 10:15 a.m</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box b row">
+                                    <div class="col-xl-2 col-md-12">
+                                        <img src="assets/img/doctor.png" alt="">
+                                    </div>
+                                    <div class="col-xl-10 col-md-12">
+                                        <p><strong>Medicina Física y Rehabilitación</strong></p>
+                                        <p>Camacho Honorio Arroyo Galo Eduardo</p>
+                                        <div class="noti_date">
+                                            <p>CITA</p>
+                                            <p>1 Julio,2024 - 10:15 a.m</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn_leido"><img src="assets/img/icon-checks.svg" alt="">Marcar todas como leídas </button>
+                        </div>
+                    </ul>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/img/icon-perfil.png" alt="">
@@ -260,5 +323,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/chart-area-demo.js"></script>
         <script src="assets/demo/chart-bar-demo.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        function openbtnfix1() {
+          document.getElementById("jtk_btns_fix1_popup").style.display = "flex";
+        }
+        function closefix1() {
+        document.getElementById("jtk_btns_fix1_popup").style.display = "none";
+        }
+        
+        $(document).ready(function () {
+        var $btns = $(".btn").click(function () {
+            if (this.id == "all") {
+            $("#parent > div").fadeIn(450);
+            } else {
+            var $el = $("." + this.id).fadeIn(450);
+            $("#parent > div").not($el).hide();
+            }
+            $btns.removeClass("active");
+            $(this).addClass("active");
+        });
+        });
+        </script>
     </body>
 </html>

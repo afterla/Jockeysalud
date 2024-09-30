@@ -6,10 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Directorio Medico</title>
+        <title>Agendar fecha</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> 
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand">
@@ -55,13 +61,13 @@
                                 </div>
                                 Inicio
                             </a>
-                            <a class="nav-link nav-link-active" href="nuevo-cita.html">
+                            <a class="nav-link" href="nuevo-cita.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-cita.svg" alt="">
                                 </div>
                                 Nueva Cita
                             </a>
-                            <a class="nav-link" href="nuevo-chequeo.html">
+                            <a class="nav-link nav-link-active" href="nuevo-chequeo.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-chequeo.svg" alt="">
                                 </div>
@@ -104,88 +110,53 @@
                 <main>
                     <div id="js_new_chequeo_fam" class="container-fluid px-4">
                         <h6>
-                            <img src="assets/img/icon-agendar-cita.svg" alt="">
-                            ¿Para quién vas a agendar una cita?
+                            <img src="assets/img/icon-nuevo-chequeo.svg" alt="">
+                            Chequeo Preventivo
                         </h6>
-                        <div class="row js_new_chequeo_fam">
+                        <div class="row js__agendar_calendario_horario ">
                             
-                            <div class="col-xl-3 col-md-6 card_fam">
-                                <div class="card card-active mb-12">
-                                    <div class="card-header">
-                                        <img src="assets/img/icon-perfil.png" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h3>Camacho Honorio Arroyo Galo Eduardo</h3>
-                                        <p>Titular</p>
-                                        <div>
-                                            <a class="btn_grey" href="#">Agendar CITA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 card_fam">
+                            <div class="col-xl-12 col-md-12">
                                 <div class="card mb-12">
-                                    <div class="card-header">
-                                        <img src="assets/img/icon-perfil.png" alt="">
-                                    </div>
                                     <div class="card-body">
-                                        <h3>Argote Junes Marleny Sarita</h3>
-                                        <p>Hermana</p>
-                                        <div>
-                                            <a class="btn_grey" href="#">Agendar CITA</a>
+                                        <div class="row js__calendario">
+                                            <div class="col-xl-6 col-md-12 js__agendar_calendar">
+                                                <div id="datepicker"></div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-12 js__calendario_info">
+                                                <div class="js__calendario_info_doc">
+                                                    <img src="assets/img/doctor.png" alt="">
+                                                    <div>
+                                                        <p>Doctor seleccionado:</p>
+                                                        <p><strong>Camacho Honorio Arroyo Galo Eduardo</strong></p>
+                                                    </div>
+                                                </div>
+                                                <h6>Estos son los horarios disponibles de tu doctor:</h6>
+                                                <div class="">
+                                                    <label for="horario1">
+                                                        <input checked name="citashorario" id="horario1" type="radio">08:45
+                                                    </label>
+                                                    <label for="horario2">
+                                                        <input name="citashorario" id="horario2" type="radio">09:00
+                                                    </label>
+                                                    <label for="horario3">
+                                                        <input name="citashorario" id="horario3" type="radio">09:15
+                                                    </label>
+                                                    <label for="horario4">
+                                                        <input name="citashorario" id="horario4" type="radio">09:30
+                                                    </label>
+                                                    <label for="horario5">
+                                                        <input name="citashorario" id="horario5" type="radio">09:45
+                                                    </label>
+                                                    <label for="horario6">
+                                                        <input name="citashorario" id="horario6" type="radio">10:15
+                                                    </label>
+                                                </div>
+                                                <div class="js__aceptar_btns">
+                                                    <a class="btn_white" href="nuevo-chequeo.html">ATRÁS</a>
+                                                    <a class="btn_grey" href="detalle-chequeo.html">CONTINUAR</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 card_fam">
-                                <div class="card mb-12">
-                                    <div class="card-header">
-                                        <img src="assets/img/icon-perfil.png" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h3>Argüelles Rocha Rocío Jimena</h3>
-                                        <p>Hijo</p>
-                                        <div>
-                                            <a class="btn_grey" href="#">Agendar CITA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 card_fam">
-                                <div class="card mb-12">
-                                    <div class="card-header">
-                                        <img src="assets/img/icon-perfil.png" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h3>Espinoza Anaya Victor Manuel</h3>
-                                        <p>Hijo</p>
-                                        <div>
-                                            <a class="btn_grey" href="#">Agendar CITA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 card_fam">
-                                <div class="card mb-12">
-                                    <div class="card-header">
-                                        <img src="assets/img/icon-perfil.png" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h3>Espinoza Anaya Victor Manuel</h3>
-                                        <p>Hijo</p>
-                                        <div>
-                                            <a class="btn_grey" href="#">Agendar CITA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 card_fam">
-                                <div class="card mb-12 card_new_fam">
-                                    <div class="card-header">
-                                        <a href="#"><img src="assets/img/pluss-icon.svg" alt=""></a>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="#">Agregar familiar</a>
                                     </div>
                                 </div>
                             </div>
@@ -202,5 +173,8 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <script>
+            $("#datepicker").datepicker();
+        </script>
     </body>
 </html>
