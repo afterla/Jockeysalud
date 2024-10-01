@@ -2165,4 +2165,14 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 .nav_notification ul.dropdown-menu .js_filter_citas_content .box:nth-child(2n) {
   background: transparent;
+}
+
+.card_noregister .card-body {
+  padding-bottom: 0;
+}
+.card_noregister .card-body h3 {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  color: #434342;
 }/*# sourceMappingURL=loguin.css.map */

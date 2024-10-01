@@ -2749,3 +2749,17 @@ div#layoutAuthentication_content {
         }
     }
 }
+
+.card_noregister {
+
+    .card-body {
+        padding-bottom: 0;
+
+        h3 {
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            color: $colorGrey;
+        }
+    }
+}
