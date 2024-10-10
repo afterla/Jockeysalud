@@ -2763,3 +2763,83 @@ div#layoutAuthentication_content {
         }
     }
 }
+
+.card_reprogramar {
+    padding: 30px !important;
+
+    .block_btns {
+        margin-top: 25px;
+    }
+}
+
+.buscar_programas_content {
+
+    img {
+        width: 100%;
+        border-radius: 0 0 60px 0;
+    }
+
+    .col-md-3 {
+        width: 100%;
+    }
+
+    label {
+        font-weight: 400;
+    }
+
+    input,
+    select {
+        height: 60px;
+    }
+
+    .col-btn {
+        margin-top: 25px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.layout_no_register_content {
+    display: flex !important;
+    justify-content: center;
+    height: 100%;
+    background: white !important;
+    
+    .logo {
+        display: flex;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .layout_no_register {
+        display: flex !important;
+        justify-content: center !important;
+        height: 100%;
+        max-width: 1240px;
+        background: white !important;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+    
+    h6 {
+        margin-bottom: 40px !important;
+    }
+
+    .content_btns {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 30px;
+
+        .btn_grey {
+            margin: 0;
+        }
+
+        .btn_white {
+            margin-right: 15px;
+        }
+    }
+}
+

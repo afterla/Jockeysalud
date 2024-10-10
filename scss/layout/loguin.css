@@ -2175,4 +2175,68 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
   display: flex;
   align-items: center;
   color: #434342;
+}
+
+.card_reprogramar {
+  padding: 30px !important;
+}
+.card_reprogramar .block_btns {
+  margin-top: 25px;
+}
+
+.buscar_programas_content img {
+  width: 100%;
+  border-radius: 0 0 60px 0;
+}
+.buscar_programas_content .col-md-3 {
+  width: 100%;
+}
+.buscar_programas_content label {
+  font-weight: 400;
+}
+.buscar_programas_content input,
+.buscar_programas_content select {
+  height: 60px;
+}
+.buscar_programas_content .col-btn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.layout_no_register_content {
+  display: flex !important;
+  justify-content: center;
+  height: 100%;
+  background: white !important;
+}
+.layout_no_register_content .logo {
+  display: flex;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.layout_no_register_content .layout_no_register {
+  display: flex !important;
+  justify-content: center !important;
+  height: 100%;
+  max-width: 1240px;
+  background: white !important;
+}
+.layout_no_register_content h1 {
+  margin-bottom: 40px;
+}
+.layout_no_register_content h6 {
+  margin-bottom: 40px !important;
+}
+.layout_no_register_content .content_btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+}
+.layout_no_register_content .content_btns .btn_grey {
+  margin: 0;
+}
+.layout_no_register_content .content_btns .btn_white {
+  margin-right: 15px;
 }/*# sourceMappingURL=loguin.css.map */
