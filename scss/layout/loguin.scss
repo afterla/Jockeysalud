@@ -2802,7 +2802,7 @@ div#layoutAuthentication_content {
 .layout_no_register_content {
     display: flex !important;
     justify-content: center;
-    height: 100%;
+    padding: 50px 0;
     background: white !important;
     
     .logo {
@@ -2841,5 +2841,123 @@ div#layoutAuthentication_content {
             margin-right: 15px;
         }
     }
+
+    .buscar_programas_content {
+        
+        P {
+            font-size: 28px;
+            color: #434342;
+            margin: 25px 0;
+        }
+
+        form {
+
+            input,
+            select {
+                background: transparent !important;
+                border-radius: 0 !important;
+                border: 1px solid #434342 !important;
+            }
+        }
+    }
 }
 
+.pago_programa_content {
+    align-items: center;
+
+    h5 {
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    .btn_white {
+        margin-right: 15px;
+    }
+}
+
+footer {
+    background: #434342;
+    padding-bottom: 30px;
+
+    li {
+        list-style: none;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .copy {
+        font-size: 18px;
+        font-weight: 400;
+        color: #0EE1D0;
+    }
+
+    .footer_row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 60px;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        
+
+        a {
+            position: relative;
+            display: flex;
+            max-width: 335px;
+            width: 100%;
+            background: #06EAC9;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #434342;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 10px;
+
+            img {
+                max-width: 20px;
+            }
+        }
+
+        img {
+            max-width: 240px;
+        }
+    }
+
+    .footer_row2 {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            max-width: fit-content;
+            display: flex;
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 400;
+                    margin-right: 8px;
+                }
+            }
+
+            &:first-child {
+
+                li {
+                    
+                    &:first-child {
+                        padding-right: 15px;
+                        margin-right: 15px;
+                        border-right: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}

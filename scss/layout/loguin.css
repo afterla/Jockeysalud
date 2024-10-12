@@ -2207,7 +2207,7 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 .layout_no_register_content {
   display: flex !important;
   justify-content: center;
-  height: 100%;
+  padding: 50px 0;
   background: white !important;
 }
 .layout_no_register_content .logo {
@@ -2239,4 +2239,93 @@ div#layoutAuthentication_content main .js_loguin_secform .card-footer p a {
 }
 .layout_no_register_content .content_btns .btn_white {
   margin-right: 15px;
+}
+.layout_no_register_content .buscar_programas_content P {
+  font-size: 28px;
+  color: #434342;
+  margin: 25px 0;
+}
+.layout_no_register_content .buscar_programas_content form input,
+.layout_no_register_content .buscar_programas_content form select {
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: 1px solid #434342 !important;
+}
+
+.pago_programa_content {
+  align-items: center;
+}
+.pago_programa_content h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.pago_programa_content .btn_white {
+  margin-right: 15px;
+}
+
+footer {
+  background: #434342;
+  padding-bottom: 30px;
+}
+footer li {
+  list-style: none;
+}
+footer main {
+  max-width: 1200px;
+  margin: auto;
+}
+footer .copy {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0EE1D0;
+}
+footer .footer_row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+footer .footer_row1 a {
+  position: relative;
+  display: flex;
+  max-width: 335px;
+  width: 100%;
+  background: #06EAC9;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #434342;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+footer .footer_row1 a img {
+  max-width: 20px;
+}
+footer .footer_row1 img {
+  max-width: 240px;
+}
+footer .footer_row2 {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_row2 ul {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+}
+footer .footer_row2 ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  margin-right: 8px;
+}
+footer .footer_row2 ul:first-child li:first-child {
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid white;
 }/*# sourceMappingURL=loguin.css.map */
