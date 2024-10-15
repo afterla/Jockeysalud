@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agendar cita</title>
+        <title>Dashboard - SB Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -49,13 +49,13 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link nav-link" href="index.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-inicio.svg" alt="">
                                 </div>
                                 Inicio
                             </a>
-                            <a class="nav-link nav-link-active" href="nuevo-cita.html">
+                            <a class="nav-link" href="nuevo-cita.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-cita.svg" alt="">
                                 </div>
@@ -85,7 +85,7 @@
                                 </div>
                                 Directorio Médico
                             </a>
-                            <a class="nav-link" href="programas.html">
+                            <a class="nav-link nav-link-active" href="programas.html">
                                 <div class="sb-nav-link-icon">
                                     <img src="assets/img/icon-programas.svg" alt="">
                                 </div>
@@ -102,47 +102,54 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div id="js_new_chequeo_fam" class="container-fluid px-4">
-                        <h6>
-                            <img src="assets/img/icon-reprogramar.svg" alt="">
-                            Programas de Salud
-                        </h6>
-                        <div class="row js_citas">
-                            
-                            <div class="col-xl-12 col-md-12">
-                                <div class="card mb-12 card_reprogramar">
-                                    <div class="card-body">
-                                        <div class="row buscar_programas_content">
-                                            <div class="col-xl-6 col-md-12">
-                                                <img src="assets/img/img-programas.jpg" alt="">
-                                            </div>
-                                            <div class="col-xl-6 col-md-12">
-                                                <h6>Completa tus datos para brindarte el programa que se ajusta a tus necesidades</h6>
-                                                <form action="buscar-programa">
-                                                    <div class="mb-3">
-                                                        <label for="inputname">Nombres y Apellidos</label>
-                                                        <input class="form-control" id="inputname" type="text" placeholder="" />
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="inputDni">DNI</label>
-                                                        <input class="form-control" id="inputDni" type="text" placeholder="" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                    
-                                                        <label for="tipodocumento">Selecciona programas</label>
-                                                        <select name="parentesco" id="tipodocumento">
-                                                            <option value="programa-1">programa-1</option>
-                                                            <option value="programa-2">programa-2</option>
-                                                      </select>
-                                                    </div>
-                                                    <div class="col-btn">
-                                                        <a class="btn_grey" href="#">CONTINUAR</a>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                                
-                                                    
-                                        </div>
+                    <div class="container-fluid px-4">
+                        <div class="row">
+                            <div class="col-xl-12 inicio_historial">
+                                <div class="card mb-12">
+                                    <div class="card-header">
+                                        <img src="assets/img/icon-familiares-green.svg" alt="">
+                                        Mis familiares
+                                    </div>
+                                    <div class="card-body shadow">
+                                        <table id="datatablesFamilieares">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Edad</th>
+                                                    <th>DNI</th>
+                                                    <th>Programa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img class="fam_table_img" src="assets/img/familiar-1.png" alt=""> Ricardo Fernandez Espinoza</td>
+                                                    <td>14</td>
+                                                    <td>15426895</td>
+                                                    <td>Programa Niño Sano (2 – 11 años)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="fam_table_img" src="assets/img/familiar-1.png" alt="">Ricardo Fernandez Espinoza</td>
+                                                    <td>14</td>
+                                                    <td>15426895</td>
+                                                    <td>Programa Niño Sano (2 – 11 años)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="fam_table_img" src="assets/img/familiar-1.png" alt="">Ricardo Fernandez Espinoza</td>
+                                                    <td>14</td>
+                                                    <td>15426895</td>
+                                                    <td>Programa Niño Sano (2 – 11 años)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="fam_table_img" src="assets/img/familiar-1.png" alt="">Ricardo Fernandez Espinoza</td>
+                                                    <td>14</td>
+                                                    <td>15426895</td>
+                                                    <td>Programa Niño Sano (2 – 11 años)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="familiares_new">
+                                        <a class="btn_grey" href="#">Añadir nuevo PROGRAMA</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,21 +159,19 @@
                
             </div>
         </div>
-
         <div class="js__aceptar">
-            <div class="js__aceptar_cont">
+            <div class="js__aceptar_cont js__pop_programa">
                 <div>
-                    <h3>Programas de Salud</h3>
-                    <button><img src="assets/img/close-circle.svg" alt=""></button>
-                </div>
-                <div>
-                    <img src="assets/img/icon-alert.svg" alt="">
+                    <img src="assets/img/img-js-fam.png" alt="">
                     <h4>Jockey Salud Familia</h4>
-                    <p>El titular no ha tenido ningún tipo de plan. ¿Desea afiliarse?</p>
-                    <div class="js__aceptar_btns">
-                        <a class="btn_white" href="#">CANCELAR</a>
-                        <a class="btn_grey" href="#">CONFIRMAR</a>
-                    </div>
+                    <a class="btn_grey" href="#">Cotiza Aquí</a>
+                </div>
+            </div>
+            <div class="js__aceptar_cont js__pop_programa">
+                <div>
+                    <img src="assets/img/img-js-dent.png" alt="">
+                    <h4>Jockey Salud Familia</h4>
+                    <a class="btn_grey" href="#">Cotiza Aquí</a>
                 </div>
             </div>
         </div>
@@ -177,21 +182,5 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-$(document).ready(function () {
-  var $btns = $(".btn").click(function () {
-    if (this.id == "all") {
-      $("#parent > div").fadeIn(450);
-    } else {
-      var $el = $("." + this.id).fadeIn(450);
-      $("#parent > div").not($el).hide();
-    }
-    $btns.removeClass("active");
-    $(this).addClass("active");
-  });
-});
-        </script>
     </body>
 </html>

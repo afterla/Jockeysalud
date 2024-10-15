@@ -1739,6 +1739,7 @@ div#layoutAuthentication_content {
         width: 450px;
         background: $white;
         border-radius: 30px;
+        margin: 10px;
 
         div {
 
@@ -1779,6 +1780,11 @@ div#layoutAuthentication_content {
                     justify-content: center;
                 }
             }
+        }
+
+        p {
+            text-align: center;
+            margin: 25px 0;
         }
     }
 
@@ -2959,5 +2965,142 @@ footer {
                 }
             }
         }
+    }
+}
+
+.ficha_salud_datos {
+
+    h5 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .row {
+
+        div {
+            margin-bottom: 15px;
+
+            div {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.ficha_salud_info {
+    margin-bottom: 50px;
+
+    h5 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .row {
+
+        .row {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+
+            div {
+                margin-top: 10px;
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+
+            textarea {
+                background: #E5F2F1;
+                border: none;
+                border-radius: 10px;
+                min-height: 60px;
+            }
+
+            .col-md-3 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                label {
+                    margin-bottom: 0;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.js__pop_programa {
+
+    div {
+        flex-direction: column;
+        padding: 0 !important;
+        border-bottom: none !important;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        a {
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+
+        h4 {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .js_edit_info_photo {
+        margin-bottom: 25px;
+    }
+
+    .js_edit_info_btns {
+        flex-direction: column;
+
+        .btn_white {
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+
+    #js_staff_content .js__subtitle_img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .js__subtitle_filter div {
+        flex-wrap: wrap;
+    }
+
+    .js_staff_content .card-body div {
+        flex-direction: column;
+
+        .btn_white {
+            margin-bottom: 15px;
+        }
+    }
+    .js__select_med_user img {
+        margin-bottom: 10px;
     }
 }
