@@ -3103,4 +3103,370 @@ footer {
     .js__select_med_user img {
         margin-bottom: 10px;
     }
+
+    .js__aceptar_btns {
+        flex-direction: column;
+        
+        a {
+            width: 100%;
+            max-width: 100% !important;
+
+            &.btn_white {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .js_filter_citas_btns {
+        flex-direction: column;
+
+        .btn_grey {
+            max-width: 100%;
+            width: 100% !important;
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        div {
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    .js_filter_citas .js_filter_citas_content .box div:nth-child(3) div {
+
+        a {
+            max-width: 100%;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    .js__citas_agendar_datos {
+        border-right: none;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .js__citas_agendar_cobertura {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .js_pago_tarjeta {
+        flex-direction: column;
+
+        .btn_white {
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+
+    .js__aceptar .js__aceptar_cont div:nth-child(2) a {
+        max-width: 100% !important;
+    }
+
+    .js_filter_citas_content {
+        padding: 0 !important;
+
+        .box {
+
+            img {
+                margin: 10px 10px 20px 10px;
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-right: 0;
+
+                a {
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .js_como_pagar .card {
+        padding: 30px;
+    }
+
+    .js_det_chequeo {
+
+        .card {
+            padding: 20px;
+
+
+        }
+    }
+
+    .card-body {
+
+        div:last-child {
+
+            display: flex;
+            flex-direction: column;
+
+            .btn_white {
+                margin-right: 0;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .btn_grey {
+                padding: 12px 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    .js__calendario_info {
+        padding-left: 0 !important;
+    }
+
+    .js__calendario_info_doc {
+        flex-direction: column;
+        padding: 20px;
+
+        img {
+            margin-bottom: 15px;
+        }
+    }
+
+    .js__agendar_calendar .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all td a {
+        padding: 5px 5px;
+    }
+
+    .js__agendar_calendario_horario .card {
+        padding: 15px;
+    }
+
+    .js__agendar_calendar {
+        border-right: 0;
+        margin-bottom: 20px;
+        padding: 0 !important;
+    }
+    .inicio_fam_regist .inicio_historial_btns a {
+        width: 100%;
+    }
+    .inicio_fam_regist .inicio_historial_btns a:first-child {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .footer_row1 {
+            width: 100%;
+            justify-content: center;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+
+            a {
+                margin-top: 20px;
+            }
+        }
+        .footer_row2 {
+            width: 100%;
+            flex-direction: column;
+
+            ul {
+
+                &:first-child {
+                    flex-direction: column;
+
+                    li {
+
+                        &:first-child {
+                            border-right: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .loguin_footer_sec1 {
+            flex-direction: column;
+
+            a {
+                margin: 30px 0 15px 0;
+            }
+        }
+
+        .loguin_footer_sec2 {
+            flex-direction: column;
+
+            ul {
+
+                &:nth-child(1) {
+                    flex-direction: column;
+
+                    li {
+                        
+                        &:first-child {
+                            border-right: 0 !important;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div#layoutAuthentication_content {
+        flex-wrap: wrap;
+
+        .loguin-img {
+            display: none;
+        }
+
+        main {
+            width: 100% !important;
+        }
+    }
+
+    .js__programa {
+
+        .card {
+            padding: 20px;
+
+            .js__programa_beneficios {
+                border-right: 0;
+            }
+        }
+    }
+
+    .ficha_salud_info {
+
+        .row {
+
+            .row {
+
+                .col-md-3 {
+                    justify-content: flex-start;
+                    flex-direction: row;
+                }
+
+                textarea {
+                    min-height: 100px;
+                }
+            }
+        }
+    }
+    .js_pago_tarjeta .btn_white {
+        text-align: center;
+    }
+    .btn_grey {
+        text-align: center;
+    }
+
+    .register-main .icon-confirm-mail {
+        max-width: 120px;
+    }
+
+    .js__register_cod {
+
+        .col-md-3 {
+            max-width: 25%;
+        }
+    }
+
+    .layout_no_register {
+        margin-left: 0 !important;
+        padding: 20px;
+
+        .card {
+            padding: 20px !important;
+        }
+
+        .js_como_pagar_medio {
+
+            div {
+                flex-direction: row;
+
+                input {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    div#js_new_chequeo_fam {
+        padding-right: 0 !important;
+    }
+
+    .row.js__programa {
+
+        .card-body {
+            padding: 0;
+
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+    }
+
+    .pago_programa_content {
+
+        img {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .col-btn {
+            flex-direction: column;
+            display: flex;
+        }
+
+        a.btn_white {
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+
+    .js__aceptar_prog {
+        flex-wrap: wrap;
+
+        .js__aceptar_cont.js__pop_programa {
+            width: 60%;
+
+            div {
+                
+                a {
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                h4 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .inicio_historial {
+
+        .card-body {
+            overflow: scroll;
+
+            .btn_grey {
+                display: flex;
+            }
+        }
+    }
 }
